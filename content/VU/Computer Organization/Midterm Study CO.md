@@ -1,5 +1,3 @@
-This is a first testing Note, that uses all kind of stuff lol
-
 # Cheat Sheet
 > Preferrably Memorized, for speed
 

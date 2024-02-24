@@ -1,2 +1,2 @@
-Welcome to this testing site!
-You can start with going to [[Welcome]]
+Welcome!
+This is a small site I made to share notes, about uni for now
