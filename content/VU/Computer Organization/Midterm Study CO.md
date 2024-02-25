@@ -89,7 +89,7 @@ Use grouping as a technique, for example $2^3 = 8$, so to convert a number **bin
 ![[Radix Conversions Bases 2.png]]
 %%[[Radix Powers of 2 Conversions.excalidraw]]%%
 
-> Pretty trivial to know your [[powers of 2]]
+> Pretty trivial to know your [[Powers of 2]]
 
 ### Other Radixes
 For example when converting to base 10, we can not apply the grouping technique. So then we will just have to use the property of the exponents and the power to get the number translated. 
