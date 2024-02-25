@@ -41,7 +41,7 @@ To find an expression we group elements together in **power's of 2**.
 There are two possible ways to represent them.
 
 
-![[Different Karnaugh Map representations.png]]
+![](Different%20Karnaugh%20Map%20representations.png)
 
 > The second way is probably **easier and faster for the exam**.
 
@@ -68,11 +68,11 @@ $$f=\overline{\overline{(\overline{ (\overline{x \cdot x}  \cdot \overline{z \cd
 
 ## Multiplexers
 It's a device that can select one from many input signals, and forward that signal as output.
-![[Multiplexer_Implementation.png|400]]
+![](Multiplexer_Implementation.png)
 
 It's important to know how to [implement certain functions](https://www.geeksforgeeks.org/multiplexers-in-digital-logic/) using **multiplexers**.
 ## Integer Representation
-![[Binary Integer Representation.png|550]]
+![](Binary%20Integer%20Representation.png)
 
 - **Unsigned Integer**: No fancy stuff, but it makes sense $2^3 + 2^2 + 2^1 + 2^0$
 - **Sign and Magnitude**: Uses the first bits for the sign $\pm ( 2^2 + 2^1 + 2^0)$
@@ -86,15 +86,15 @@ It's important to know how to [implement certain functions](https://www.geeksfor
 ### Radix of powers of 2
 Use grouping as a technique, for example $2^3 = 8$, so to convert a number **binary to octa** we can make groups of 3 bits:
 
-![[Radix Conversions Bases 2.png]]
+![](Radix%20Conversions%20Bases%202.png)
 %%[[Radix Powers of 2 Conversions.excalidraw]]%%
 
-> Pretty trivial to know your [[Powers of 2]]
+> Pretty trivial to know your [[Powers of 2]]!
 
 ### Other Radixes
 For example when converting to base 10, we can not apply the grouping technique. So then we will just have to use the property of the exponents and the power to get the number translated. 
 
-![[Radix Conversions Base 10.png]]
+![](Radix%20Conversions%20Base%2010.png)
 
 %%[[Radix conversions base 10.excalidraw]]%%
 
