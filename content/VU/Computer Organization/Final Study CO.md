@@ -1,12 +1,14 @@
 
-What you need to know for the **final CO Exam**, be aware that this is **a distilled version** of what has been seen in the tutorials
+This is a **summary** of what you need to know for the **final CO Exam**, be aware that this is **a distilled version** of what has been seen in the tutorials
 - You can find good (and probably better) resources on lausta's [CS Hub](https://lausta.notion.site/CS-Hub-6e7cae889f844cb59ae5f1809c88e553)
 
 # Cheat Sheet
 > Preferrably Memorized
 
 - [[Basic Processing Unit (CISC, single bus).png]]
-- 
+- Amdal's Law: $S_N=\frac{N}{N*s+p}$
+- Gustafson's Law: $S_N=s+N*p$
+- [[#Locality Principles]]
 
 
 
@@ -90,8 +92,8 @@ In this case the set size is 4, so the items will be stored in order of **X%4** 
 
 ### Synchronous vs Asynchronous
 
-- **Synchronous Bus**: 
-- **Asynchronous Bus**: 
+- **Synchronous Bus**: There is a common clock signal for which data transfer read/write data at the same rate.
+- **Asynchronous Bus**: The handshake protocol is used instead so both endpoints acknowledge to each other when they sent/received data.
 
 # Pipelining & Parallelization
 Stages
