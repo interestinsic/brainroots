@@ -1,10 +1,11 @@
 
-What you need to know for the final CO Exam, be aware that this is a distilled version of what has been seen in the tutorials
-- You can find more nice (and probably better) resources on lausta's the [CS Hub](https://lausta.notion.site/CS-Hub-6e7cae889f844cb59ae5f1809c88e553)
+What you need to know for the **final CO Exam**, be aware that this is **a distilled version** of what has been seen in the tutorials
+- You can find good (and probably better) resources on lausta's [CS Hub](https://lausta.notion.site/CS-Hub-6e7cae889f844cb59ae5f1809c88e553)
 
 # Cheat Sheet
 > Preferrably Memorized
 
+- [[Basic Processing Unit (CISC, single bus).png]]
 - 
 
 
@@ -18,9 +19,6 @@ What you need to know for the final CO Exam, be aware that this is a distilled v
 **MAR**: Memory Adress Register
 **MDR**: Memory Data Register
 
-> Each line (1, 2, 3...) is what happens in one **Clock Cycle**, eg. a maximum of 1 CPU Bus write-read
-
-
 ## Control Sequences
 ### Fetch Request Cycle
 1. PC$_{out}$, MAR$_{in}$, READ, CONST=4, MUX$_{select}$=CONST, ALU$_F$ = ADD, Z$_{in}$ : 
@@ -29,6 +27,8 @@ What you need to know for the final CO Exam, be aware that this is a distilled v
 	- Save next execution adress in PC and wait for memory to arrive
 3. MDR$_{out}$, IR$_{in}$ 
 	- Save the instruction fetched from memory into IR
+
+> Each line (1, 2, 3...) is what happens in one **Clock Cycle**, eg. a maximum of 1 CPU Bus write-read
 ## Indirect Memory Accesses
 Keeping into account how many times we read/write to memory
 - **Add R1, R2** : 1
@@ -93,4 +93,59 @@ In this case the set size is 4, so the items will be stored in order of **X%4** 
 - **Synchronous Bus**: 
 - **Asynchronous Bus**: 
 
-# Pipelining
+# Pipelining & Parallelization
+Stages
+1. Fetch
+2. Decode 
+3. Execute
+4. Write
+
+Metrics
+- **Latency**: the time it takes for one single instruction to complete ($x$ $cycles$)
+- **Throughput**: the number of instructions we are completing in a given time unit ($x$ $instructions/cycle$)
+## Pipelining
+
+### Basic
+We use stages to increase the **Throughput** by overlaping certain parts of instructions over each other.
+
+**Pipeline Stalls**: Can be caused by:
+- Memory access
+- Branching
+- Data dependency
+- Long Operation
+
+
+### Superscalar
+Simmilar to Basic Pipelining, only that we have more than unit
+- eg. 2 **Decode units**
+
+**in-order commits**: mean that the instructions finish in the order they started, even if that means waiting of some instructions so that the order can be followed.
+
+> [!TIP] Remember to:
+> 1. Draw the complete pipeline tables
+> 2. Check how many **instances** of eacth type of unit there are
+> 3. Are the commits **in-order** or **out-of-order**?
+
+## Parallelization
+A program always has a **sequential** ($s$) and a **paralelizable** ($p$) part:
+$$s + p = 1$$
+
+### Amdal's Law
+> With more processors... we can perform **the same** task in **less time**
+
+The **time** for $N$ processors can be calculated as:
+$$t_N=s+\frac{p}{N}$$
+
+
+The **speedup** with this law can be calculated as:
+$$S_N=\frac{t_1}{t_N}=\frac{s+p}{s+\frac{p}{N}}=\frac{1}{\frac{N*s+p}{N}}=\frac{N}{N*s+p}$$
+
+The **bottleneck** is the **sequential fraction** ($s$)
+- Because as $N$ increases the value $s$ will be bigger relative to the rest of the time equation
+### Gustafson's Law
+> With more processors... we can perform **a more difficult** task in **the same time**
+
+The **speedup** can be calculated as:
+$$S_N=s+N*p$$
+%%AA Pending%%
+
