@@ -370,17 +370,23 @@ The users are able to check if the channel is occupied (*sense*) before sending 
 #### 1-Persistent CSMA
 Only send when the channel is free. (But check constantly if it's free)
 
-![](Midterm%20study%20CN%202024-04-20%2022.11.04.excalidraw)
+![](1%20Persistent%20CSMA.png)
+
+%%[[Midterm study CN 2024-04-20 22.11.04.excalidraw]]%%
 
 #### non-Persistent CSMA
 Only send when the channel is free. (When it's occupied wait a little)
-![](Midterm%20study%20CN%202024-04-20%2022.15.44.excalidraw)
+
+![](non%20Persistent%20CSMA.png)
+
+%%[[Midterm study CN 2024-04-20 22.15.44.excalidraw]]%%
 
 #### p-Persistent CSMA
 > For **Slotted Channels**
 
 Wait until channel is free, then send with a probability $p$
-![](Midterm%20study%20CN%202024-04-20%2022.19.37.excalidraw)
+![](p%20Persistent%20CSMA.png)
+%%[[Midterm study CN 2024-04-20 22.19.37.excalidraw]]%%
 
 
 ### CSMA/CD
