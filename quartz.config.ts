@@ -21,8 +21,8 @@ const config: QuartzConfig = {
     theme: {
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Merriweather",
+        body: "Merriweather",
         code: "IBM Plex Mono",
       },
       colors: {
