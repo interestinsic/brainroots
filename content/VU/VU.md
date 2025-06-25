@@ -3,5 +3,6 @@ Here I have the notes on different **Computer Science** courses offered on *Vrij
 # Courses
 - [[Computer Organization]]
 - [[Computer Networks]]
+- [[Software Engineering Processes]]
 
 
